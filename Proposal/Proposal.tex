@@ -11,20 +11,88 @@
 % It should contain title, authors, abstract, introduction, related work, model/method, and
 % experiments. In particular, all these sections should be complete (though they can be short)
 % except for model/method and experiments.
+\documentclass{article}
 
+% Use final option for non-anonymous class submission
+\usepackage[final]{neurips_2021}
+
+% Recommended packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{Spring 2026 Analytics II Team Project Proposal Report}
+
+% List the group and authors
+\author{
+  Group 1 \\[1ex]  % Adds Group 1 at the top
+  Joshua \\
+  Author 2 \\
+  Author 3 \\
+  Author 4 \\
+  Author 5
+}
+
+% Set the date manually (March 8, 2026)
+%\date{March 8, 2026}
+
+%\author{
+%  First Author \\
+%  Department of XYZ \\
+%  University Name \\
+%  City, Country \\
+%  \texttt{author1@university.edu}
+%  \And
+%  Second Author \\
+%  Department of XYZ \\
+%  University Name \\
+%  City, Country \\
+%  \texttt{author2@university.edu}
+%}
+
+
+\begin{document}
+
+\maketitle
+
+% Add professor's name below title page (separate from authors)
+\vspace{2em}  % Adds vertical space between the authors and professor's name
+\begin{center}
+  \textbf{Professor:} K. Hua
+\end{center}
 
 % Abstract (15%)
 % It should summarize the main idea of the project and its contributions. It should be
 % understandable to anyone in the course.
+\newpage
+\begin{abstract}
+Briefly summarize the problem, the proposed method, and the main findings.
+Keep it concise (typically 150–250 words).
+\end{abstract}
+
 
 
 % Introduction (15%)
 % It should clearly state the problem being addressed and why it is important.
+\section{Introduction}
+Introduce the research problem, motivation, and contributions of the paper.
+
 
 
 % Related Work (15%)
 % It should clearly distinguish what your proposed contribution from previous literature (e.g., a
 % 1-2 sentence summary of at least 3 closely related papers).
+\section{Related Work}
+Discuss prior research and explain how your work differs from or extends it.
+
 
 
 % Model/Method (25%)
@@ -45,6 +113,14 @@
 % a research idea typically has to FAIL many times until it works. It is highly likely that the
 % project doesn’t go as planned. Therefore, with simple ideas, you could have the flexibility to
 % tweak and a higher chance of obtaining some conclusions in the end.
+\section{Model/Method}
+Describe your model, algorithm, or methodology.
+
+Example equation:
+\begin{equation}
+    y = f(x; \theta)
+\end{equation}
+
 
 
 % Experiments Design (20%)
@@ -59,4 +135,11 @@
 % real-world datasets to analyze how important a specific model/method design is, i.e., the so-
 % called ablation study. One can also design special synthetic experiments to showcase the
 % benefits of the proposed model/method under certain (possibly extreme) conditions.
+\section{Experiments Design}
+Describe the experimental setup, datasets, evaluation metrics, and results.
+Include figures and tables as needed.
 
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
